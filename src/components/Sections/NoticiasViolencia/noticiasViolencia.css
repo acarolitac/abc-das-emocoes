@@ -1,0 +1,68 @@
+/* Adicione ao seu CSS se não estiver usando Tailwind */
+/* Container principal */
+.container.noticiasViolencias{
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    background-color: #39AD7C;
+}
+
+.noticias-violencia-section {
+    background-color: #f9fafb;
+    padding: 4rem 1rem;
+}
+
+.noticias-violencia-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.noticias-violencia-section .grid {
+    display: grid;
+    gap: 2rem;
+}
+
+#btn-noticias {
+    background-color: #FF974A;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 20px; /* Use pixels em vez de % para melhor controle */
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-noticias:hover {
+    background-color: #E5863A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .noticias-violencia-section .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .noticias-violencia-section .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.noticias-violencia-section .card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.noticias-violencia-section .card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

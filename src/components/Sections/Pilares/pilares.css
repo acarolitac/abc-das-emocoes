@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+/* Container principal */
+#pilares {
+  background-color: #545391;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Container dos pilares */
+.pilares-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Itens dos pilares com posicionamento em escada */
+.pilar-item {
+  display: flex;
+}
+
+.pilar-1 { margin-left: 0; }
+.pilar-2 { margin-left: 2.5rem; }
+.pilar-3 { margin-left: 5rem; }
+.pilar-4 { margin-left: 7.5rem; }
+.pilar-5 { margin-left: 10rem; }
+
+/* Botões dos pilares */
+.pilar-button {
+  padding: 1.4rem 2rem;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  min-width: 320px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pilar-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Imagem do mascote */
+.mascote-image {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+}
+
+/* Modais */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+  border-radius: 25px;
+  max-width: 550px;
+  width: 90%;
+  color: white;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content h3 {
+  font-family: 'Dyna Puff', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.modal-close {
+  background-color: white;
+  color: #545391;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pilar-item {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+  
+  .pilar-button {
+    min-width: 250px;
+    font-size: 0.95rem;
+    padding: 1.1rem 1.6rem;
+  }
+  
+  .mascote-image {
+    max-width: 250px;
+  }
+  
+  /* Título menor em mobile */
+  .max-w-4xl {
+    max-width: 300px !important;
+  }
+}

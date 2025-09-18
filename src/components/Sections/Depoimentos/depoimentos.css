@@ -1,0 +1,247 @@
+/* Container principal */
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Seções */
+.home-section {
+  padding: 5rem 1rem;
+}
+
+.about-section {
+  background-color: white;
+}
+
+.methodology-section {
+  background-color: #faf5ff;
+}
+
+.reviews-section {
+  background-color: white;
+}
+
+.cta-section {
+  background-color: #8b5cf6;
+  color: white;
+  text-align: center;
+}
+
+/* Títulos */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #8b5cf6;
+}
+
+.cta-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* About Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.about-content {
+  padding: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.about-highlight {
+  background-color: #f3e8ff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-highlight-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7c3aed;
+}
+
+/* Methodology Section */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .methodology-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.methodology-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.methodology-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-number {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #8b5cf6;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.card-text {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Reviews Section */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.review-card {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: #d8b4fe;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.review-info {
+  flex: 1;
+}
+
+.review-name {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.review-role {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.review-text {
+  color: #374151;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: white;
+  color: #8b5cf6;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .home-section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-title {
+    font-size: 1.875rem;
+  }
+  
+  .cta-text {
+    font-size: 1.125rem;
+  }
+  
+  .about-emoji {
+    font-size: 3rem;
+  }
+}
